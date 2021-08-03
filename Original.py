@@ -1,4 +1,5 @@
 import speedtest
+from pprint import pprint
 
 servers = []
 # If you want to test against a specific server
@@ -16,4 +17,4 @@ s.upload(threads=threads)
 s.results.share()
 
 results_dict = s.results.dict()
-print(results_dict)
+pprint(results_dict)
